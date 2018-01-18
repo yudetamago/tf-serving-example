@@ -1,0 +1,10 @@
+version: '3'
+services:
+  tensorflow-model-server:
+    image: tensorflow-model-server:latest
+    container_name: tensorflow-model-server
+    command: tensorflow_model_server --port=9000 --model_config_file=/tmp/models.conf
+    build: .
+    ports:
+      - 9000:9000
+

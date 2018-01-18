@@ -1,0 +1,1 @@
+An example of [Tensorflow Serving](https://www.tensorflow.org/serving/)
